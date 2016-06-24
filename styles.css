@@ -95,30 +95,44 @@ code {
   font-size:16px;
 }
 
+.finalthankyou {
+  background: #56BA66;
+  color: white;
+  padding: 40px;
+}
+.finalthankyou h3 {
+  font-weight: normal;
+}
+.finalthankyou a {
+  color: yellow;
+}
+.finalthankyou a:hover {
+  border-color: yellow;
+}
+
 /* Signup form */
 
 .asterisk { color: red; }
-.ad {
+.signup {
   background: #56BA66;
-  margin: 2rem auto;
-  border: 1px solid #ddd;
+  margin: 0 auto 2rem auto;
   padding: 40px 30px 60px 30px;
 
 }
-.ad form {
+.signup form {
   background: white;
   padding: 20px 30px;
   border-radius: 10px;
   max-width: 400px;
   margin: 0 auto;
 }
-.ad h3 {
+.signup h3 {
   margin-top: 1em;
   color: white;
   text-align: center;
   font-weight: normal;
 }
-.ad .sub-title {
+.signup .sub-title {
   color: white;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
@@ -127,20 +141,20 @@ code {
   font-weight: 300;
   text-align: center;
 }
-.ad .mc-field-group {
+.signup .mc-field-group {
   margin: 1em 0;
 }
-.ad .indicates-required,
-.ad label {
+.signup .indicates-required,
+.signup label {
   font-size: 15px;
 }
-.ad input {
+.signup input {
   width: 96%;
   outline:none;
   padding: 6px;
 }
 
-.ad input[type="submit"] {
+.signup input[type="submit"] {
   background: #56BA66;
   border: none;
   color: white;
@@ -152,7 +166,7 @@ code {
   padding: 15px 20px;
 
 }
-.ad input[type="submit"]:hover {
+.signup input[type="submit"]:hover {
   background: #399748;
 }
 

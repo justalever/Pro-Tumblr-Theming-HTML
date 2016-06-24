@@ -7,7 +7,8 @@
 
     <link href="styles.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="prism.js"></script>
 
 </head>
@@ -19,6 +20,22 @@
         <img src="proTumblrTheming-web-resources/image/cover.jpg" alt="" />
     </div>
 
+        <h5>Disclaimer</h5>
+
+        <p>I am in no way affiliated with Tumblr so if you work at Tumblr please don't come after me :). The information contained in this eBook is for informational purposes only and offered for free. </p>
+
+        <p>The material in this guide may include information, products or services by third parties. Third Party Materials comprise of the products and opinions expressed by their owners. As such, I do not assume responsibility or liability for any Third Party material or opinions.</p>
+
+        <p>The publication of such Third Party Materials does not constitute my guarantee of any information, instruction, opinion, products or services contained within the Third Party Material. The use of recommended Third Party Material does not guarantee any success and or earnings related to you or your business. Publication of such Third Party Material is simply a recommendation and an expression of my own opinion of that material.</p>
+
+        <p>No part of this publication shall be reproduced, transmitted, or sold in whole or in part in any form, without the prior written consent of the author. All trademarks and registered trademarks appearing in this guide are the property of their respective owners.</p>
+
+        <p>Users of this guide are advised to do their own due diligence when it comes to making business decisions and all information, products, services that have been provided should be independently verified by your own qualified professionals. By reading this guide, you agree that myself and my company is not responsible for the success or failure of your business decisions relating to any information presented in this eBook.</p>
+
+        <em>&copy; Copyright Web-Crunch 2016</em>
+
+        <hr />
+
         <h2 id="preface">Preface</h2>
 
         <p>Why tumblr? A question I get asked a lot. One that I don’t have a great answer to. I suppose the best one is the crazy onset of the demand for my services as a result of a single blog post I wrote a while back.</p>
@@ -26,6 +43,9 @@
         <p>You see, it all started as a simple guest blog post for a <a href="http://www.webdesignerdepot.com/2013/07/how-to-develop-a-custom-tumblr-theme/">fairly popular blog</a>. Readers took an interest in my article and began contacting me on my personal website which I linked to following the post. They inquired about using my knowledge of tumblr to help them with their own tumblr themes. This blog post was written in 2013 and here it is 2015 and I’m still receiving inquiries based on that one blog post.</p>
 
         <p>My most popular inquiry for work to date is for custom tumblr themes. This very reason led me to want to help others by writing about how to design and build your own themes and why it’s relatively an easy thing to do with a few prerequisites. If you have the drive and want to author your own theme, I invite you to follow along. At the end of this book, you should have the groundwork in place to create the professional tumblr theme you’ve always wanted.</p>
+
+        <hr />
+
 
         <h3>Resources for this Book</h3>
 
@@ -41,6 +61,8 @@
         <h5>Code Editors</h5>
         <a href="http://www.sublimetext.com/">Sublime Text</a><br/>
         <a href="https://atom.io/">Atom</a>
+        <br/>
+        <hr />
 
         <h3>What is Tumblr?</h3>
         <p>In the world of the web you have your big social networking platforms like Facebook or Twitter and then down the line you find a neat social network known as Tumblr which stands on its own.</p>
@@ -3531,59 +3553,65 @@
                 &lt;div class=”social”&gt;
                  &lt;ul&gt;
                  {block:IfTwitter}
-                 &lt;li&gt;
-                 &lt;a href=”http://twitter.com/{text:Twitter}”&gt;
-                 &lt;svg class=”icon icon-twitter”&gt;
-                 &lt;use xlink:href=”#twitter”&gt;&lt;/use&gt;
-                 &lt;/svg&gt;
-                 &lt;/a&gt;
+                   &lt;li&gt;
+                     &lt;a href=”http://twitter.com/{text:Twitter}”&gt;
+                       &lt;svg class=”icon icon-twitter”&gt;
+                          &lt;use xlink:href=”#twitter”&gt;&lt;/use&gt;
+                       &lt;/svg&gt;
+                     &lt;/a&gt;
                  &lt;/li&gt;
                  {/block:IfTwitter}
+
                  {block:IfFacebook}
                  &lt;li&gt;
-                 &lt;a href=”http://facebook.com/{text:Facebook}”&gt;
-                 &lt;svg class=”icon icon-facebook”&gt;
-                 &lt;use xlink:href=”#facebook”&gt;&lt;/use&gt;
-                 &lt;/svg&gt;
-                 &lt;/a&gt;
+                   &lt;a href=”http://facebook.com/{text:Facebook}”&gt;
+                     &lt;svg class=”icon icon-facebook”&gt;
+                       &lt;use xlink:href=”#facebook”&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                     &lt;/a&gt;
                  &lt;/li&gt;
                  {/block:IfFacebook}
+
                  {block:IfGooglePlus}
                  &lt;li&gt;
-                 &lt;a href=”//plus.google.com/+{text:Google Plus}”&gt;
-                 &lt;svg class=”icon icon-googleplus”&gt;
-                 &lt;use xlink:href=”#googleplus”&gt;&lt;/use&gt;
-                 &lt;/svg&gt;
-                 &lt;/a&gt;
+                    &lt;a href=”//plus.google.com/+{text:Google Plus}”&gt;
+                       &lt;svg class=”icon icon-googleplus”&gt;
+                         &lt;use xlink:href=”#googleplus”&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                   &lt;/a&gt;
                  &lt;/li&gt;
                  {/block:IfGooglePlus}
+
                  {block:IfDribbble}
                  &lt;li&gt;
-                 &lt;a href=”http://dribbble.com/{text:Dribbble}”&gt;
-                 &lt;svg class=”icon icon-dribbble”&gt;
-                 &lt;use xlink:href=”#dribbble”&gt;&lt;/use&gt;
-                 &lt;/svg&gt;
-                 &lt;/a&gt;
+                   &lt;a href=”http://dribbble.com/{text:Dribbble}”&gt;
+                     &lt;svg class=”icon icon-dribbble”&gt;
+                       &lt;use xlink:href=”#dribbble”&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                   &lt;/a&gt;
                  &lt;/li&gt;
                  {/block:IfDribbble}
+
                  {block:IfInstagram}
                  &lt;li&gt;
-                 &lt;a href=”http://instagram.com/{text:Instagram}”&gt;
-                 &lt;svg class=”icon icon-instagram”&gt;
-                 &lt;use xlink:href=”#instagram”&gt;&lt;/use&gt;
-                 &lt;/svg&gt;
-                 &lt;/a&gt;
+                   &lt;a href=”http://instagram.com/{text:Instagram}”&gt;
+                     &lt;svg class=”icon icon-instagram”&gt;
+                       &lt;use xlink:href=”#instagram”&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                   &lt;/a&gt;
                  &lt;/li&gt;
                  {/block:IfInstagram}
+
                  {block:IfEmail}
                  &lt;li&gt;
-                 &lt;a href=”mailto:{text:Email}”&gt;
-                 &lt;svg class=”icon icon-email”&gt;
-                 &lt;use xlink:href=”#email”&gt;&lt;/use&gt;
-                 &lt;/svg&gt;
-                 &lt;/a&gt;
+                   &lt;a href=”mailto:{text:Email}”&gt;
+                     &lt;svg class=”icon icon-email”&gt;
+                       &lt;use xlink:href=”#email”&gt;&lt;/use&gt;
+                     &lt;/svg&gt;
+                   &lt;/a&gt;
                  &lt;/li&gt;
                  {/block:IfEmail}
+
                  &lt;/ul&gt;
                 &lt;/div&gt;
                 &lt;!--end .social--&gt;
@@ -3603,8 +3631,8 @@
 
                  <pre class="language-markup"><code>
                  &lt;form class=”search” action=”/search” method=”get”&gt;
-                 &lt;input type=”text” name=”q” value=”” placeholder=”Search” /&gt;
-                 &lt;input type=”submit” value=”{lang:Search}” /&gt;
+                   &lt;input type=”text” name=”q” value=”” placeholder=”Search” /&gt;
+                   &lt;input type=”submit” value=”{lang:Search}” /&gt;
                 &lt;/form&gt;
                 </code></pre>
 
@@ -3612,8 +3640,8 @@
 
                 <pre class="language-markup"><code>
                 &lt;form action=”/search” method=”get”&gt;
-                 &lt;input type=”text” name=”q” value=”{SearchQuery}”/&gt;
-                 &lt;input type=”submit” value=”Search”/&gt;
+                  &lt;input type=”text” name=”q” value=”{SearchQuery}”/&gt;
+                  &lt;input type=”submit” value=”Search”/&gt;
                 &lt;/form&gt;
                 </code></pre>
 
@@ -3623,8 +3651,8 @@
 
                 <pre class="language-markup"><code>
                 &lt;section class=”content”&gt;
-                 &lt;article class=”posts {TagsAsClasses}”&gt;
-                 &lt;div class=”grid-sizer”&gt;&lt;/div&gt;
+                  &lt;article class=”posts {TagsAsClasses}”&gt;
+                    &lt;div class=”grid-sizer”&gt;&lt;/div&gt;
                  {block:SearchPage}
                  &lt;h2 class=”search-heading”&gt;Your search for “{SearchQuery}” returned {SearchResultCount} results&lt;/h2&gt;
                  {/block:SearchPage}
@@ -3648,10 +3676,10 @@
 			   <pre class="language-markup"><code>
                 {block:ifAbout}
                  &lt;div class=”about-me”&gt;
-                 &lt;h3&gt;About Me&lt;/h3&gt;
-                &#9; &lt;p&gt;{text:About}&lt;/p&gt;
-                &#9; {block:AskEnabled}&lt;a href=“/ask” class=”about-me-button”&gt;Send Inquiry&lt;/a&gt;{/block:AskEnabled}
-                &#9;&lt;/div&gt;
+                   &lt;h3&gt;About Me&lt;/h3&gt;
+                    &#9; &lt;p&gt;{text:About}&lt;/p&gt;
+                    &#9; {block:AskEnabled}&lt;a href=“/ask” class=”about-me-button”&gt;Send Inquiry&lt;/a&gt;{/block:AskEnabled}
+                 &#9;&lt;/div&gt;
                 {/block:ifAbout}
                 </code></pre>
 
@@ -3714,12 +3742,12 @@
 
 				<pre class="language-markup"><code>
                 &lt;!-- Text Block Starts --&gt;
-                &lt;div class=”post text grid-item”&gt;
-                &#9;&lt;h3&gt;&lt;a href=”#”&gt;The title of the text post would look like this&lt;/a&gt;&lt;/h3&gt;
+                  &lt;div class=”post text grid-item”&gt;
+                    &#9;&lt;h3&gt;&lt;a href=”#”&gt;The title of the text post would look like this&lt;/a&gt;&lt;/h3&gt;
                 &#9;
-                &#9;&lt;p&gt;Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party. Leggings ethical McSweeney’s, normcore you &lt;a href=”#”&gt;probably haven’t heard of them&lt;/a&gt; Marfa organic squid. Slow-carb 90’s ennui Godard pug asymmetrical, narwhal VHS Tonx High Life. &lt;/p&gt;
-                &#9;
-                &lt;/div&gt;
+                     &#9;&lt;p&gt;Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party. Leggings ethical McSweeney’s, normcore you &lt;a href=”#”&gt;probably haven’t heard of them&lt;/a&gt; Marfa organic squid. Slow-carb 90’s ennui Godard pug asymmetrical, narwhal VHS Tonx High Life. &lt;/p&gt;
+                   &#9;
+                  &lt;/div&gt;
                 &lt;!-- Text Block Ends --&gt;
                 </code></pre>
 
@@ -3728,10 +3756,10 @@
 
                 <pre class="language-markup"><code>
                 {block:Text}
-                &lt;div class=“post text grid-item”&gt;
-                 &lt;h3&gt;&lt;a href=“{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt;
-                 {Body}
-                &lt;/div&gt;
+                  &lt;div class=“post text grid-item”&gt;
+                    &lt;h3&gt;&lt;a href=“{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt;
+                    {Body}
+                  &lt;/div&gt;
                 {/block:Text}
                 </code></pre>
 
@@ -3744,10 +3772,10 @@
                 <p>Our <code>html</code> code prior to adding the Tumblr markup for photo-based posts looks like this:</p>
                 <pre class="language-markup"><code>
                  &lt;!-- Photo Block Starts --&gt;
-                 &lt;div class=”post photo grid-item”&gt;
-                 &lt;a href=”#”&gt;&lt;img src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
-                 &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/div&gt;
-                &lt;/div&gt;
+                   &lt;div class=”post photo grid-item”&gt;
+                    &lt;a href=”#”&gt;&lt;img src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
+                    &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/div&gt;
+                  &lt;/div&gt;
                  &lt;!-- Photo Block Ends --&gt;
                  </code></pre>
 
@@ -3756,11 +3784,11 @@
                 <pre class="language-markup"><code>
                 &lt;!-- Photo Block Starts --&gt;
                  {block:Photo}
-                 &lt;div class=”post photo grid-item”&gt;
-                 {LinkOpenTag}&#9;
-                 &lt;img src=”{PhotoURL-500}” alt=”{PhotoAlt}” /&gt;{LinkCloseTag}
-                 {block:Caption}&lt;div class=”caption”{Caption}&lt;/div&gt;{/block:Caption}
-                 &lt;/div&gt;
+                   &lt;div class=”post photo grid-item”&gt;
+                    {LinkOpenTag}&#9;
+                      &lt;img src=”{PhotoURL-500}” alt=”{PhotoAlt}” /&gt;{LinkCloseTag}
+                     {block:Caption}&lt;div class=”caption”{Caption}&lt;/div&gt;{/block:Caption}
+                    &lt;/div&gt;
                  {/block:Photo}
                 &lt;!-- Photo Block Ends --&gt;
                 </code></pre>
@@ -3778,10 +3806,10 @@
 
                 <pre class="language-markup"><code>
                 &lt;!-- Panorama Block Starts --&gt;
-                &lt;div class=”post panorama grid-item grid-item--panorama-w grid-item--panorama-h”&gt;
-                 &lt;img src=”http://placekitten.com/g/850/324” alt=”{PhotoAlt}” /&gt;
-                 &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/div&gt;
-                &lt;/div&gt;
+                   &lt;div class=”post panorama grid-item grid-item--panorama-w grid-item--panorama-h”&gt;
+                    &lt;img src=”http://placekitten.com/g/850/324” alt=”{PhotoAlt}” /&gt;
+                    &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/div&gt;
+                  &lt;/div&gt;
                 &lt;!-- Panorama Block Ends --&gt;
                 </code></pre>
 
@@ -3791,10 +3819,10 @@
                 <pre class="language-markup"><code>
                 &lt;!-- Panorama Block Starts --&gt;
                  {block:Panorama}
-                 &lt;div class=”post panorama grid-item grid-item--panorama-w grid-item--panorama-h”&gt;
-                {LinkOpenTag}&lt;img src=”{PhotoURL-Panorama}” alt=”{PhotoAlt}” /&gt;{LinkCloseTag}
-                 {block:Caption}&lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
-                 &lt;/div&gt;
+                    &lt;div class=”post panorama grid-item grid-item--panorama-w grid-item--panorama-h”&gt;
+                    {LinkOpenTag}&lt;img src=”{PhotoURL-Panorama}” alt=”{PhotoAlt}” /&gt;{LinkCloseTag}
+                    {block:Caption}&lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
+                   &lt;/div&gt;
                 {/block:Panorama}
                 &lt;!-- Panorama Block Ends --&gt;
                 </code></pre>
@@ -3810,11 +3838,11 @@
                 <pre class="language-markup"><code>
                  &lt;!-- Photoset Block Starts--&gt;
                  &lt;div class=”post photoset grid-item”&gt;
-                 &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
-                 &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
-                 &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
-                 &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
-                 &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/div&gt;
+                   &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
+                   &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
+                   &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
+                   &lt;a href=”#”&gt;&lt;img class=”photoset-photo” src=”http://placekitten.com/g/270/184” alt=”{PhotoAlt}” /&gt;&lt;/a&gt;
+                  &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/div&gt;
                  &lt;/div&gt;
                 &lt;!-- Photoset Block Ends--&gt;
                 </code></pre>
@@ -3823,13 +3851,13 @@
                 <pre class="language-markup"><code>
                  &lt;!-- Photoset Block Starts--&gt;
                  {block:Photoset}
-                &#9;&lt;div class=”post photoset grid-item”&gt;
-                &#9; {block:Photos}
-                &#9; &lt;div class=”photoset-photo”&gt;
-                &#9; &lt;img src=”{PhotoURL-250}” /&gt;
-                &#9; {block:Caption}&lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
-                &#9; &lt;/div&gt;
-                &#9; {/block:Photos}
+                  &#9;&lt;div class=”post photoset grid-item”&gt;
+                   &#9; {block:Photos}
+                     &#9; &lt;div class=”photoset-photo”&gt;
+                     &#9; &lt;img src=”{PhotoURL-250}” /&gt;
+                     &#9; {block:Caption}&lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
+                  &#9; &lt;/div&gt;
+                  &#9; {/block:Photos}
                 &#9;
                 &#9; {block:Caption}&lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
                 &#9;
@@ -3878,18 +3906,18 @@
                 <pre class="language-html"><code>
                 &lt;!-- Chat Block Starts--&gt;
                 &lt;div class=”post chat grid-item”&gt;
-                &lt;h3&gt;&lt;a href=”{Permalink}”&gt;My Chat Title&lt;/a&gt;&lt;/h3&gt;
-                &lt;ul class=”chat”&gt;
-                &#9;&lt;li class=”{Alt} user_{UserNumber}”&gt;
-                &#9; &lt;span class=”label”&gt;Andy:&lt;/span&gt;This is what Andy said
-                &#9;&lt;/li&gt;
-                &#9;&lt;li class=”{Alt} user_{UserNumber}”&gt;
-                &#9; &lt;span class=”label”&gt;Reese:&lt;/span&gt;This is what Reese said
-                &#9;&lt;/li&gt;
-                &#9;&lt;li class=”{Alt} user_{UserNumber}”&gt;
-                &#9; &lt;span class=”label”&gt;Andy:&lt;/span&gt;This is what Andy said again
-                &#9;&lt;/li&gt;
-                &lt;/ul&gt;
+                  &lt;h3&gt;&lt;a href=”{Permalink}”&gt;My Chat Title&lt;/a&gt;&lt;/h3&gt;
+                  &lt;ul class=”chat”&gt;
+                    &#9;&lt;li class=”{Alt} user_{UserNumber}”&gt;
+                      &#9; &lt;span class=”label”&gt;Andy:&lt;/span&gt;This is what Andy said
+                    &#9;&lt;/li&gt;
+                    &#9;&lt;li class=”{Alt} user_{UserNumber}”&gt;
+                      &#9; &lt;span class=”label”&gt;Reese:&lt;/span&gt;This is what Reese said
+                    &#9;&lt;/li&gt;
+                    &#9;&lt;li class=”{Alt} user_{UserNumber}”&gt;
+                      &#9; &lt;span class=”label”&gt;Andy:&lt;/span&gt;This is what Andy said again
+                    &#9;&lt;/li&gt;
+                  &lt;/ul&gt;
                 &lt;/div&gt;
                 &lt;!-- Chat Block Ends--&gt;
                 </code></pre>
@@ -3900,17 +3928,17 @@
                 &lt;!-- Chat Block Starts--&gt;
                 {block:Chat}
                  &lt;div class=”post chat grid-item”&gt;
-                &#9;&#9;{block:Title}
-                &#9;&#9;&#9;&lt;h3&gt;&lt;a href=”{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt;
-                &#9;&#9;{/block:Title}
+                  &#9;&#9;{block:Title}
+                    &#9;&#9;&#9;&lt;h3&gt;&lt;a href=”{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt;
+                  &#9;&#9;{/block:Title}
 
                  &lt;ul class=”chat”&gt;
-                 {block:Lines}
-                 &lt;li class=”{Alt} user_{UserNumber}”&gt;
-                 &lt;span class=”label”&gt;{Name}:&lt;/span&gt;{Line}
-                 &lt;/li&gt;
-                 {/block:Lines}
-                 &lt;/ul&gt;
+                  {block:Lines}
+                    &lt;li class=”{Alt} user_{UserNumber}”&gt;
+                      &lt;span class=”label”&gt;{Name}:&lt;/span&gt;{Line}
+                    &lt;/li&gt;
+                  {/block:Lines}
+                  &lt;/ul&gt;
                  &lt;/div&gt;
                 {/block:Chat}
                 &lt;!-- Chat Block Ends--&gt;
@@ -3926,16 +3954,16 @@
                 <code>
                 &lt;!-- Video Block Starts--&gt;
                  &lt;div class=”post video grid-item”&gt;
-                &#9;&lt;iframe width=”270” height=”184” src=”https://www.youtube.com/embed/HANCzu70us4” frameborder=”0” allowfullscreen&gt;&lt;/iframe&gt;
-                &#9; &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nulla ipsam doloremque deleniti ab, ipsum aut facere rerum error delectus impedit officiis, eligendi, voluptas quam animi culpa voluptatum fuga consequatur.&lt;/div&gt;
-                &#9;&lt;/div&gt;
-                &lt;!-- Video Block Ends--&gt;
+                   &#9;&lt;iframe width=”270” height=”184” src=”https://www.youtube.com/embed/HANCzu70us4” frameborder=”0” allowfullscreen&gt;&lt;/iframe&gt;
+                  &#9; &lt;div class=”caption”&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nulla ipsam doloremque deleniti ab, ipsum aut facere rerum error delectus impedit officiis, eligendi, voluptas quam animi culpa voluptatum fuga consequatur.&lt;/div&gt;
+                 &#9;&lt;/div&gt;
+                 &lt;!-- Video Block Ends--&gt;
                 We had to hard code the video into the theme as well as the corresponding caption. Let’s update the code to integrate with Tumblr more gracefully.</p>
                 &lt;!-- Video Block Starts--&gt;
                 {block:Video}
                  &lt;div class=”post video grid-item”&gt;
                  {Video-250}
-                 {block:Caption}&lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
+                   {block:Caption}&lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
                 &lt;/div&gt;
                 {/block:Video}
                  &lt;!-- Video Block Ends--&gt;</code></pre>
@@ -3967,23 +3995,27 @@
                 <pre class="language-markup"><code>
                 &lt;!-- Answer Block Starts--&gt;
                 &lt;div class=”answer grid-item”&gt;
-                &#9;&lt;div class=”asker”&gt;
-                &#9; &lt;div class=”asker-thumb”&gt;&lt;img src=”http://placekitten.com/g/40/40”&gt;&lt;/div&gt;
-                &#9; &lt;div class=”asker-name”&gt;Lemmy&lt;/div&gt;
-                &#9;&lt;/div&gt;
+                  &#9;&lt;div class=”asker”&gt;
+                    &#9; &lt;div class=”asker-thumb”&gt;&lt;img src=”http://placekitten.com/g/40/40”&gt;&lt;/div&gt;
+                    &#9; &lt;div class=”asker-name”&gt;Lemmy&lt;/div&gt;
+                  &#9;&lt;/div&gt;
                 &#9;&lt;div&gt;
-                &#9; &lt;div class=”question”&gt;What color is the sky?&lt;/div&gt;
+
+                  &#9; &lt;div class=”question”&gt;What color is the sky?&lt;/div&gt;
                 &#9;&lt;/div&gt;
+
                 &#9;&lt;div class=”answerer”&gt;
-                &#9; &lt;div class=”answerer-thumb”&gt;&lt;img src=”http://placekitten.com/g/40/40”&gt;&lt;/div&gt;
-                &#9; &lt;div class=”answerer-name”&gt;Julie&lt;/div&gt;
+                  &#9; &lt;div class=”answerer-thumb”&gt;&lt;img src=”http://placekitten.com/g/40/40”&gt;&lt;/div&gt;
+                  &#9; &lt;div class=”answerer-name”&gt;Julie&lt;/div&gt;
                 &#9;&lt;/div&gt;
+
                 &#9;&lt;div&gt;
-                &#9; &lt;div class=”answer-text”&gt;Blue&lt;/div&gt;
+                  &#9; &lt;div class=”answer-text”&gt;Blue&lt;/div&gt;
                 &#9;&lt;/div&gt;
+
                 &#9; &lt;div class=”replies”&gt;
-                &#9; Replies
-                &#9;&lt;/div&gt;
+                 &#9; Replies
+                 &#9;&lt;/div&gt;
                 &lt;/div&gt;
                 &lt;!-- Answer Block Ends--&gt;
                 </code></pre>
@@ -3994,24 +4026,29 @@
                 &lt;!-- Answer Block Starts--&gt;
                 {block:Answer}
                 &lt;div class=”answer grid-item”&gt;
-                 &lt;div class=”asker”&gt;
-                 &lt;div class=”asker-thumb”&gt;&lt;img src=”{AskerPortraitURL-40}”&gt;&lt;/div&gt;
-                 &lt;div class=”asker-name”&gt;{Asker}&lt;/div&gt;
-                 &lt;/div&gt;
-                 &lt;div&gt;
-                 &lt;div class=”question”&gt;{Question}&lt;/div&gt;
-                 &lt;/div&gt;
+                  &lt;div class=”asker”&gt;
+                   &lt;div class=”asker-thumb”&gt;&lt;img src=”{AskerPortraitURL-40}”&gt;&lt;/div&gt;
+                  &lt;div class=”asker-name”&gt;{Asker}&lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div&gt;
+                  &lt;div class=”question”&gt;{Question}&lt;/div&gt;
+                &lt;/div&gt;
+
                  {block:Answerer}
-                 &lt;div class=”answerer”&gt;
-                 &lt;div class=”answerer-thumb”&gt;&lt;img src=”{AnswererPortraitURL-40}”&gt;&lt;/div&gt;
-                 &lt;div class=”answerer-name”&gt;{Answerer}&lt;/div&gt;
+                  &lt;div class=”answerer”&gt;
+                    &lt;div class=”answerer-thumb”&gt;&lt;img src=”{AnswererPortraitURL-40}”&gt;&lt;/div&gt;
+                    &lt;div class=”answerer-name”&gt;{Answerer}&lt;/div&gt;
                  &lt;/div&gt;
+
                  &lt;div&gt;
-                 &lt;div class=”answer-text”&gt;{Answer}&lt;/div&gt;
-                 &lt;/div&gt;
+                   &lt;div class=”answer-text”&gt;{Answer}&lt;/div&gt;
+                &lt;/div&gt;
+
                  &lt;div class=”replies”&gt;
-                 {Replies}
-                 &lt;/div&gt;
+                   {Replies}
+                &lt;/div&gt;
+
                  {/block:Answerer}
                 &lt;/div&gt;
                 {/block:Answer}
@@ -4022,136 +4059,153 @@
                 <p>We made it! The final posts section of our index page now looks like the following block:</p>
 
 				<pre class="language-markup"><code>
-                &lt;section class=”content”&gt;
-                 &lt;article class=”posts {TagsAsClasses}”&gt;
-                 &lt;div class=”grid-sizer”&gt;&lt;/div&gt;
+        &lt;section class=”content”&gt;
+          &lt;article class=”posts {TagsAsClasses}”&gt;
+            &lt;div class=”grid-sizer”&gt;&lt;/div&gt;
                 &#9;&#9; {block:SearchPage}
                  &lt;h2 class=”search-heading”&gt;Your search for “{SearchQuery}” returned {SearchResultCount} results&lt;/h2&gt;
-                 {/block:SearchPage}
-                 {block:TagPage}
-                 &lt;h2&gt;Posts tagged “{Tag}”&lt;/h2&gt;{/block:TagPage}
-                 {block:IndexPage}
+                {/block:SearchPage}
+
+              {block:TagPage}
+              &lt;h2&gt;Posts tagged “{Tag}”&lt;/h2&gt;{/block:TagPage}
+
+              {block:IndexPage}
                  {block:Posts}
                  &lt;!-- Panorama Block Starts --&gt;
+
                  {block:Panorama}
                  &lt;div class=”post panorama grid-item grid-item--panorama-w grid-item--panorama-h”&gt;
                  {LinkOpenTag}&lt;img src=”{PhotoURL-Panorama}” alt=”{PhotoAlt}” /&gt;{LinkCloseTag} {block:Caption}
-                 &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
-                 &lt;/div&gt;
+                   &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
+                   &lt;/div&gt;
                  {/block:Panorama}
                  &lt;!-- Panorama Block Ends --&gt;
+
                  &lt;!-- Text Block Starts --&gt;
                  {block:Text}
                  &lt;div class=”post text grid-item”&gt;
-                 &lt;h3&gt;&lt;a href=”{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt; {Body}
+                  &lt;h3&gt;&lt;a href=”{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt; {Body}
                  &lt;/div&gt;
                  {/block:Text}
                  &lt;!-- Text Block Ends --&gt;
+
                  &lt;!-- Photo Block Stars --&gt;
                  {block:Photo}
-                 &lt;div class=”post photo grid-item”&gt;
-                 {LinkOpenTag}
-                 &lt;img src=”{PhotoURL-500}” alt=”{PhotoAlt}” /&gt;{LinkCloseTag} {block:Caption}
-                 &lt;div class=”caption” {Caption}&lt;/div&gt;{/block:Caption}
+                  &lt;div class=”post photo grid-item”&gt;
+                   {LinkOpenTag}
+                   &lt;img src=”{PhotoURL-500}” alt=”{PhotoAlt}” /&gt;{LinkCloseTag} {block:Caption}
+                   &lt;div class=”caption” {Caption}&lt;/div&gt;{/block:Caption}
                  &lt;/div&gt;
                  {/block:Photo}
                  &lt;!-- Photo Block Ends --&gt;
+
                  &lt;!-- Photoset Block Starts--&gt;
                  {block:Photoset}
                  &lt;div class=”post photoset grid-item”&gt;
-                 {block:Photos}
-                 &lt;div class=”photoset-photo”&gt;
-                 &lt;img src=”{PhotoURL-250}” /&gt; {block:Caption}
-                 &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
+                   {block:Photos}
+                   &lt;div class=”photoset-photo”&gt;
+                   &lt;img src=”{PhotoURL-250}” /&gt; {block:Caption}
+                   &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
                  &lt;/div&gt;
                  {/block:Photos} {block:Caption}
                  &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
                  &lt;/div&gt;
                  {/block:Photoset}
                  &lt;!-- Photoset Block Ends--&gt;
+
+
                  &lt;!-- Quote Block Starts--&gt;
                  {block:Quote}
-                 &lt;div class=”post quote grid-item”&gt;
-                 &amp;#8220;{Quote}&amp;#8221; {block:Source}
-                 &lt;div class=”source”&gt;Source&lt;/div&gt;{/block:Source}
+                   &lt;div class=”post quote grid-item”&gt;
+                   &amp;#8220;{Quote}&amp;#8221; {block:Source}
+                   &lt;div class=”source”&gt;Source&lt;/div&gt;{/block:Source}
                  &lt;/div&gt;
                  {/block:Quote}
                  &lt;!-- Quote Block Ends--&gt;
+
                  &lt;!-- Link Block Starts--&gt;
                  {block:Link}
-                 &lt;div class=”post link grid-item”&gt;
-                 {block:Thumbnail}
-                 &lt;img src=”{Thumbnail}” alt=”{PhotoAlt}” /&gt; {/block:Thumbnail}
-                 &lt;a href=”{URL}” {Target}&gt;{Name}&lt;/a&gt; {block:Description}
-                 &lt;div class=”description”&gt;{Description}&lt;/div&gt;
+                  &lt;div class=”post link grid-item”&gt;
+                  {block:Thumbnail}
+                   &lt;img src=”{Thumbnail}” alt=”{PhotoAlt}” /&gt; {/block:Thumbnail}
+                   &lt;a href=”{URL}” {Target}&gt;{Name}&lt;/a&gt; {block:Description}
+                   &lt;div class=”description”&gt;{Description}&lt;/div&gt;
                  {/block:Description}
                  &lt;/div&gt;
                  {/block:Link}
                  &lt;!-- Link Block Ends--&gt;
+
                  &lt;!-- Chat Block Starts--&gt;
                  {block:Chat}
-                 &lt;div class=”post chat grid-item”&gt;
+                   &lt;div class=”post chat grid-item”&gt;
                  {block:Title}
-                 &lt;h3&gt;&lt;a href=”{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt;{/block:Title}
-                 &lt;ul class=”chat”&gt;
-                 {block:Lines}
-                 &lt;li class=”{Alt} user_{UserNumber}”&gt;
-                 &lt;span class=”label”&gt;{Name}:&lt;/span&gt;{Line}
-                 &lt;/li&gt;
+                   &lt;h3&gt;&lt;a href=”{Permalink}”&gt;{Title}&lt;/a&gt;&lt;/h3&gt;{/block:Title}
+                   &lt;ul class=”chat”&gt;
+                   {block:Lines}
+                     &lt;li class=”{Alt} user_{UserNumber}”&gt;
+                       &lt;span class=”label”&gt;{Name}:&lt;/span&gt;{Line}
+                     &lt;/li&gt;
                  {/block:Lines}
                  &lt;/ul&gt;
                  &lt;/div&gt;
                  {/block:Chat}
                  &lt;!-- Chat Block Ends--&gt;
+
                  &lt;!-- Video Block Starts--&gt;
                  {block:Video}
-                 &lt;div class=”post video grid-item”&gt;
-                 {Video-250} {block:Caption}
-                 &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
+                   &lt;div class=”post video grid-item”&gt;
+                   {Video-250} {block:Caption}
+                   &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
                  &lt;/div&gt;
                  {/block:Video}
                  &lt;!-- Video Block Ends--&gt;
+
                  &lt;!-- Audio Block Starts--&gt;
                  {block:Audio}
-                 &lt;div class=”post audio grid-item”&gt;
-                 {block:AudioEmbed}{AudioEmbed-250}{/block:AudioEmbed} {block:Caption}
-                 &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
+                   &lt;div class=”post audio grid-item”&gt;
+                   {block:AudioEmbed}{AudioEmbed-250}{/block:AudioEmbed} {block:Caption}
+                   &lt;div class=”caption”&gt;{Caption}&lt;/div&gt;{/block:Caption}
                  &lt;/div&gt;
                  {/block:Audio}
                  &lt;!-- Audio Block Ends--&gt;
+
                  &lt;!-- Answer Block Starts--&gt;
                  {block:Answer}
-                 &lt;div class=”answer grid-item”&gt;
-                 &lt;div class=”asker”&gt;
-                 &lt;div class=”asker-thumb”&gt;&lt;img src=”{AskerPortraitURL-40}”&gt;&lt;/div&gt;
-                 &lt;div class=”asker-name”&gt;{Asker}&lt;/div&gt;
-                 &lt;/div&gt;
+                   &lt;div class=”answer grid-item”&gt;
+                   &lt;div class=”asker”&gt;
+                    &lt;div class=”asker-thumb”&gt;&lt;img src=”{AskerPortraitURL-40}”&gt;&lt;/div&gt;
+                    &lt;div class=”asker-name”&gt;{Asker}&lt;/div&gt;
+                   &lt;/div&gt;
+
                  &lt;div&gt;
-                 &lt;div class=”question”&gt;{Question}&lt;/div&gt;
+                   &lt;div class=”question”&gt;{Question}&lt;/div&gt;
                  &lt;/div&gt;
                  {block:Answerer}
-                 &lt;div class=”answerer”&gt;
-                 &lt;div class=”answerer-thumb”&gt;&lt;img src=”{AnswererPortraitURL-40}”&gt;&lt;/div&gt;
-                 &lt;div class=”answerer-name”&gt;{Answerer}&lt;/div&gt;
-                 &lt;/div&gt;
+                   &lt;div class=”answerer”&gt;
+                     &lt;div class=”answerer-thumb”&gt;&lt;img src=”{AnswererPortraitURL-40}”&gt;&lt;/div&gt;
+                     &lt;div class=”answerer-name”&gt;{Answerer}&lt;/div&gt;
+                   &lt;/div&gt;
+
                  &lt;div&gt;
-                 &lt;div class=”answer-text”&gt;{Answer}&lt;/div&gt;
-                 &lt;/div&gt;
+                   &lt;div class=”answer-text”&gt;{Answer}&lt;/div&gt;
+                &lt;/div&gt;
+
                  &lt;div class=”replies”&gt;
-                 {Replies}
+                  {Replies}
                  &lt;/div&gt;
                  {/block:Answerer}
+
                  &lt;/div&gt;
                  {/block:Answer}
                  &lt;!-- Answer Block Ends--&gt;
-                 {/block:Posts}
-                 &lt;!-- end of the Posts Block --&gt;
-                 {/block:IndexPage}
-                 &lt;!-- end of the Index Page --&gt;
-                 &lt;/article&gt;
-                 &lt;!--end of article--&gt;
-                &lt;/section&gt;
-                </code></pre>
+
+              {/block:Posts}
+              &lt;!-- end of the Posts Block --&gt;
+            {/block:IndexPage}
+             &lt;!-- end of the Index Page --&gt;
+          &lt;/article&gt;
+        &lt;!--end of article--&gt;
+    &lt;/section&gt;</code></pre>
 
                 <p>Since adding a few posts from the dashboard area our blog is starting to look like a blog!</p>
 
@@ -4189,9 +4243,10 @@
                 <p>I went ahead and modified our theme’s code to provide support for Permalink pages. Check out the updated code below which includes both the <code>{block:IndexPage}</code> and <code>{block:PermalinkPage}</code> code blocks:</p>
 
                 <pre class="language-markup"><code>
-                &lt;section class=”content”&gt;
-                 &lt;article class=”posts {TagsAsClasses}”&gt;
-                 &lt;div class=”grid-sizer”&gt;&lt;/div&gt;
+          &lt;section class=”content”&gt;
+              &lt;article class=”posts {TagsAsClasses}”&gt;
+                &lt;div class=”grid-sizer”&gt;&lt;/div&gt;
+
                  {block:TagPage}
                  &lt;h2&gt;Posts tagged “{Tag}”&lt;/h2&gt;{/block:TagPage} {block:IndexPage} {block:Posts}
                  &lt;!-- Panorama Block Starts --&gt;
@@ -4711,7 +4766,10 @@
                 <p>I hope you have found this guide to be of some use if you are new to tumblr theming or even if you are a seasoned pro. As I mentioned before you are welcome to extend this theme further to learn even more about what tumblr has to offer.</p>
                 <p>I set out to write this book to help make better sense of the theme documentation. There are some code samples there that aren’t quite clear enough for a beginner. As with any new language or framework, you only get better by diving in and practicing so be sure to keep at it and before long you will be publishing themes like a pro!</p>
                 <p>If you liked this book be sure to subscribe for more releases in the future at <a href="http://web-crunch.com/subscribe">web-crunch.com!</a></p>
-<hr />
+                <hr />
+
+
+                <hr/>
                 <div class="about-photo">
                   <img src="proTumblrTheming-web-resources/image/andy-portrait.jpg" alt="" />
                 </div>
@@ -4730,8 +4788,16 @@
                 <a href="http://web-crunch.com">Web-Crunch</a>
 
 <hr/>
+                <div class="finalthankyou">
+                <h3>A Final Thank You!</h3>
 
-                <div class="ad">
+                <p>Thank you for reading this book. If you enjoyed it, I invite you to subscribe at <a href="http://web-crunch.com">web-crunch.com</a> for more updates regarding future realeases.</p>
+
+                <p>A lot of time was spent on this resources and I did it all to help anyone out there transition into Tumblr theming for completely free. If you found the information I presented to be useful feel free to <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EXNGG4CUPG49E">buy me a coffee</a> so I can keep going with more! </p>
+                </div>
+                <div class="signup">
+
+
                 <h3>Subscribe for more upcoming books and resources!</h3>
                 <p class="sub-title">If you liked this book, subscribe to get more!</p>
                 <!-- Begin MailChimp Signup Form -->
